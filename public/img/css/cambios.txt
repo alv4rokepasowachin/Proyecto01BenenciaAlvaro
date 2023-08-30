@@ -1,0 +1,31 @@
+<!--lugar1-->
+    <section id="lugaresT">
+        <div class="container">
+
+            <div class="img-container"> </div>
+            <div class="texto">
+                <h2><span class="color-lugarT">Ven a conocer</span></h2>
+                <h3>EjemploDeLugar</h3>
+                <p>contexto</p>
+                <button>Viajar!</button>
+            </div>
+        </div>
+    </section>
+      <!-- lugar1-->
+
+      <!-- lugar2-->
+      <section id="lugaresT">
+        <div class="container">
+
+            <div class="img-container"> </div>
+            <div class="texto">
+                <h2><span class="color-lugarT">Ven a conocer</span></h2>
+                <h3>EjemploDeLugar</h3>
+                <p>contexto</p>
+                <button>Viajar!</button>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- lugar2-->

@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2em;
+    flex: center;
+    color: rgb(141, 99, 57);
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px, 30px;
+    border-radius: 15px;
+    border: 2px, solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(190, 110, 30);
+}
+
+button:hover {
+
+    background-color: rgb(141, 99, 57);
+}
+
+.container {
+
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-lugarT {
+    color: rgb(141, 99, 57);
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(141, 99, 57);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(141, 99, 57);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("./turismoJujuy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background-color: rgb(141, 99, 57)
+}
+
+.lugar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.lugar img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.valoracion {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.estrellas {
+    color: gold;
+    /* Color de las estrellas */
+    font-size: 24px;
+    /* Tamaño de las estrellas */
+}
+
+/*#lugaresT .container{
+    text-align: center;
+    padding: 200px 12px;
+}*/
+/* mmuestra los lugares en versiones mobiles adaptadas */
+/*#lugaresT  .img-container{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(./turismoJujuy.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+
+}*/
+/* ------------------------------------------------------*/
+
+@media(min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    .contenido {
+        padding-top: 100px;
+        /* Ajusta el valor según el alto de la barra superior */
+        background-color: #fff;
+    }
+
+    .titulo {
+        text-align: center;
+        padding: 20px 0;
+        background-color: rgb(141, 99, 57);
+        color: white;
+    }
+
+    .lugar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    .imagen-lugar {
+        max-width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    .descripcion {
+        text-align: center;
+    }
+
+    .valoracion {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .estrellas {
+        color: gold;
+        /* Color de las estrellas */
+        font-size: 24px;
+        /* Tamaño de las estrellas */
+    }
+
+    /*#lugaresT .container{
+ display: flex;
+ justify-content: center;
+}
+
+#lugaresT .texto{
+    width: 50%;
+    text-align: initial;
+    padding: 0px 30px;
+} */
+    /*Muestra los lugares en version de escritorio  */
+    /*#lugaresT  .img-container{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(./turismoJujuy.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+    margin:10px;
+    
+}*/
+
+}
